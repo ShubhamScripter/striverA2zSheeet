@@ -1,0 +1,27 @@
+/* pattern
+
+*****
+ ***
+  *
+
+*/
+
+
+
+
+void nForest(int n) {
+
+    int gap=0,star=2*n-1;
+
+	for(int i=1;i<=n;i++)
+{
+    for(int count=1;count<=gap;count++)
+    cout<<' ';
+    for(int count=1;count<=star;count++)
+    cout<<'*';
+    cout<<endl;
+    gap++;
+    star-=2;
+
+}
+}

@@ -1,0 +1,40 @@
+/* pattern
+
+  *
+ ***
+*****
+*****
+ ***
+  *
+
+*/
+
+
+//trick : if i ahave row=n don't do change in star and gap both
+
+
+void nStarDiamond(int n) {
+
+    int gap=n-1,star=1;
+    
+    for(int i=1;i<=2*n;i++)
+    {
+        for(int count=1;count<=gap;count++)
+        cout<<' ';
+        for(int count=1;count<=star;count++)
+        cout<<'*';
+        cout<<endl;
+        if(i<n)
+        {
+            gap--;
+            star+=2;
+        }
+        if(i>n)
+        {
+            gap++;
+            star-=2;
+        }
+
+
+    }
+}
